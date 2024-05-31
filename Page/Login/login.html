@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link -->
+    <link rel="shortcut icon" type="imagex/png" href="../../image/logotipo/logotipo.ico">
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" type="imagex/png" href="../image/logotipo/logotipo.ico">
+
+    <title>Faça login</title>
+  </head>
+  <body>
+  <header class="header">
+    <a href="/"><img src="../../image/logotipo/logotipo.png" alt="imagem logo"/></a>
+
+    <nav class="nav">
+      <button id="btn-menu" class="hamburger"></button>
+
+      <ul class="nav-list">
+        <a href="../../index.html"><li>Home</li> </a>
+        <a href="../Passagem/passagem.html"><li>Nossos Serviços</li></a>
+        <a href="../Contato/contato.html"> <li>Contato</li> </a>
+        <a href="../Sobre/sobre.html"><li>Sobre</li></a>
+      </ul>
+    </nav>
+</header>
+    <main>
+
+      <div class="page">
+        <form method="POST" class="formLogin">
+          <form method="POST" action="login.php">
+              <h1>Login</h1>
+              <p>Digite os seus dados de acesso no campo abaixo.</p>
+              <label for="email">E-mail</label>
+              <input type="email" placeholder="Digite seu e-mail" autofocus="true" />
+              <label for="password">Senha</label>
+              <input type="password" placeholder="Digite sua senha" />
+              <a href="/">Esqueci minha senha</a>
+              <input type="submit" value="Acessar" class="btn" />
+          </form>
+      </div>
+
+    </main>
+      <script src="login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+//apenas um teste, sujeito a alteração
+
+
+amarelo = #F5E233
+
+
+
+verde musgo = #46753E
+
+
+azul claro = #13CFF2
+cor de mar = #5FDEC5
+rosa = #F21373
+roxo = #6A5FDE
+preto = #0B0B0D
+branco = #FFFFFF

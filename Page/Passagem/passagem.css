@@ -1,0 +1,247 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  body {
+    
+    background-image: url("../../image/background/black_bgrnd.jpg");
+  
+    color: #ffffff;
+  }
+  
+  header {
+    background-color: #0b0b0d;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+    padding: 2rem;
+  
+    -webkit-box-shadow: 0px 7px 15px -1px rgba(235, 50, 245, 0.34);
+    -moz-box-shadow: 0px 7px 15px -1px rgba(235, 50, 245, 0.34);
+    box-shadow: 0px 7px 15px -1px rgba(235, 50, 245, 0.34);
+  }
+  
+  header img{
+    width: 100px;
+  }
+
+  nav {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  ul li {
+    cursor: pointer;
+    transition: 0.6s;
+  }
+  
+  ul li:hover {
+    color: #eb32f5;
+  
+    -webkit-box-shadow: 0px 0px 15px -1px rgba(235, 50, 245, 1);
+    -moz-box-shadow: 0px 0px 15px -1px rgba(235, 226, 245, 1);
+    box-shadow: 0px 0px 15px -1px rgba(235, 50, 245, 1);
+  }
+  
+  a {
+    padding: 8px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .passaContainer{
+    
+    background-color: #0b0b0d;
+    width: 80vw;
+    margin: 0 auto;
+    padding: 10px;
+
+    margin-top: 50px;
+
+    border: 1px solid #b353ce;
+  }
+
+  .passaContainer p{
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .head{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .info{
+    
+    padding: 5px;
+    text-align: center;
+  }
+
+  .info p{
+    
+    padding: 5px;
+  }
+
+  .compraContainer{
+      border-top: 1px solid #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+  }
+
+  .compraInfo{
+    
+    padding: 10px;
+  }
+
+  .compraInfo p{
+    font-size: 2rem;
+    text-align: justify;
+  }
+  
+  .compraContainer button{
+    padding: 15px 20px;
+    background-color: #b353ce;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .buttoncompra{
+    padding: 15px 20px;
+    background-color: #b353ce;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .compraContainer button:hover{
+    background-color: #b353ce;
+  }
+
+  /* Menu hamburguer */
+  
+  .hamburger {
+    display: none;
+    background: none;
+    border: none;
+    border-top: 3px solid #fff;
+    cursor: pointer;
+  }
+  
+  .hamburger::before,
+  .hamburger::after {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin-top: 5px;
+  }
+  
+  @media (max-width: 750px) {
+  
+    #mainCard{
+      margin: 0 auto;
+      margin-top: 2rem;
+      width: 400px;
+    }
+    
+  
+    .hamburger {
+      display: block;
+    }
+  
+    .nav-list {
+      display: block;
+  
+      position: absolute;
+      width: 100vw;
+      top: 90px;
+      right: 0px;
+      background-color: #0b0b0d;
+      height: calc(0px);
+      z-index: 1000;
+      transition: 0.6s;
+      visibility: hidden;
+      overflow-y: hidden;
+    }
+  
+    .nav-list li {
+      font-size: 3rem;
+      padding: 2rem;
+      text-align: center;
+      border: 1px solid #b353ce;
+    }
+  
+    .nav-list a {
+      width: 100%;
+      padding: 1.5rem;
+    }
+  
+    .nav.active .nav-list {
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6rem;
+      height: calc(100vh - 90px);
+      visibility: visible;
+      overflow-y: auto;
+    }
+
+    
+  }
+
+
+  @media (max-width: 700px){
+    .img{
+          display: none;
+    }
+
+    .head{
+      
+      padding: 10px;
+    }
+
+    .info p{
+      padding: 10px;
+    }
+
+    .compraContainer{
+      flex-direction: column;
+    }
+
+    .compraInfo p{
+      text-align: center;
+      padding: 10px;
+    }
+
+    .info{
+      border-right: 1px solid #6A5FDE;
+      padding: 5px;
+      text-align: center;
+    }
+  }
+  
+  

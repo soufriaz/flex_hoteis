@@ -1,0 +1,193 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background-color: #0b0b0d;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+    padding: 2rem;
+  
+    -webkit-box-shadow: 0px 7px 15px -1px rgba(235, 50, 245, 0.34);
+    -moz-box-shadow: 0px 7px 15px -1px rgba(235, 50, 245, 0.34);
+    box-shadow: 0px 7px 15px -1px rgba(235, 50, 245, 0.34);
+  }
+  
+
+  body {
+    background-image: url("../../image/background/black_bgrnd.jpg");
+    color: #ffffff;
+  }
+
+  header img{
+    width: 100px;
+  }
+
+
+  nav {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  ul li {
+    cursor: pointer;
+    transition: 0.6s;
+  }
+  
+  ul li:hover {
+    color: #eb32f5;
+  
+    -webkit-box-shadow: 0px 0px 15px -1px rgba(235, 50, 245, 1);
+    -moz-box-shadow: 0px 0px 15px -1px rgba(235, 50, 245, 1);
+    box-shadow: 0px 0px 15px -1px rgba(235, 50, 245, 1);
+  }
+  
+  a {
+    padding: 8px;
+    text-decoration: none;
+    color: white;
+  }
+
+  .hamburger {
+    display: none;
+    background: none;
+    border: none;
+    border-top: 3px solid #fff;
+    cursor: pointer;
+  }
+  
+  .hamburger::before,
+  .hamburger::after {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin-top: 5px;
+  }
+
+
+  .title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+  }
+
+  .title h1{
+    font-size: 3rem;
+  }
+
+
+  #conteudoCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    text-align: center;
+    
+  }
+
+
+  #conteudoCard .card{
+    margin-bottom: 3rem;
+    text-align: center;
+    
+  }
+
+  #conteudoCard h2{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+
+  #conteudoCard p{
+    font-size: 1.5rem;
+    
+    font-weight: bolder;
+    color: #b345ce;
+    background-color: #0b0b0d07;
+    margin: 0 auto;
+    width: 600px;
+  }
+
+@media (max-width: 750px) {
+
+    #mainCard{
+      margin: 0 auto;
+      margin-top: 2rem;
+      width: 400px;
+    }
+    
+  
+    .hamburger {
+      display: block;
+    }
+  
+    .nav-list {
+      display: block;
+  
+      position: absolute;
+      width: 100vw;
+      top: 90px;
+      right: 0px;
+      background-color: #0b0b0d;
+      height: calc(0px);
+      z-index: 1000;
+      transition: 0.6s;
+      visibility: hidden;
+      overflow-y: hidden;
+    }
+  
+    .nav-list li {
+      font-size: 3rem;
+      padding: 2rem;
+      text-align: center;
+      border: 1px solid #f21373;
+    }
+  
+    .nav-list a {
+      width: 100%;
+      padding: 1.5rem;
+    }
+  
+    .nav.active .nav-list {
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6rem;
+      height: calc(100vh - 90px);
+      visibility: visible;
+      overflow-y: auto;
+    }
+
+
+    #conteudoCard p{
+      font-size: 1.5rem;
+      
+      font-weight: bolder;
+      color: #13CFF2;
+      background-color: #0b0b0d07;
+      margin: 0 auto;
+      width: 400px;
+    }
+
+  }
+  

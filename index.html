@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" type="imagex/png" href="../image/logotipo/logotipo.ico">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link css -->
+
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="indexSlide.css">
+
+    <title>Flex Hotéis | Reservas</title>
+  </head>
+  <body>
+    <header class="header">
+      
+     <a href="/"> <img src="image/logotipo/logotipo.png" alt="imagem logo" /> </a>
+
+      <nav class="nav">
+        <button id="btn-menu" class="hamburger"></button>
+
+        <ul class="nav-list">
+          <a href="Page/Passagem/passagem.html"><li>Nossos Serviços</li> </a>
+          <a href="Page/Contato/contato.html"> <li>Contato</li> </a>
+          <a href="Page/Sobre/sobre.html"><li>Sobre</li></a>
+        </ul>
+      </nav>
+    </header>
+    <div>
+      <form action="#">
+        
+
+    <main>
+      <div class="title">
+        <h1>Escolha para onde ir:</h1> 
+        <h2>Encontre e reserve o seu quarto de hotel online com facilidade!</h2>
+        <div class="barrapesq">
+        <input class="barrapesq" type="text" placeholder="Pesquisar hotéis">
+        <div class="btnpesq">
+        <a id="btnpesquisa" href="Page/Passagem/passagem.html">Buscar</a>
+        </div>
+        </div>
+          
+      </div>
+     
+
+      <div class="slider">
+
+        <div class="slides">
+            <!-- radio butt -->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+
+            <!-- slide img -->
+
+            <div class="slide first">
+              <img src="image/hoteis/random-h.jpg" alt="imagem1">
+            </div>
+            <div class="slide">
+              <img src="image/hoteis/random-h1.jpg" alt="imagem2">
+            </div>
+            <div class="slide">
+              <img src="image/hoteis/random-h2.jpg" alt="imagem3">
+            </div>
+            <div class="slide">
+              <img src="image/hoteis/random-h3.jpg" alt="imagem4">
+            </div>
+
+            <!-- navegação auto -->
+
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+
+        </div>
+
+        <div class="manual-navigation">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+
+      </div>
+
+
+      
+      <div id="mainCard">
+        
+        <p>
+          Venha conhecer nosso catálogo de planos <br/>especiais para agilizar sua estadia!</p>
+       
+        <div id="btn-link">
+           <a  href="Page/Passagem/passagem.html">Adquira já!</a>
+        </div>
+
+    </div>
+
+    </main>
+
+    <script src="index.js"></script>
+    <script src="indexSlide.js"></script>
+  </body>
+</html>
+
+
